@@ -1,0 +1,18 @@
+#include<stdio.h>
+int Arraysum(int arr[], int n){
+    if(n == 0){
+        return arr[n-1];
+    }
+    return arr[n-1] + Arraysum(arr,n-1);
+}
+int power(int x, int y){
+    if(y == 0)
+    return 0;
+  return x = power(x,y-1);  
+}
+void main(){
+    int x,y,i=0;
+    printf("Enter a value of x and y");
+    scanf("%d%d",&x,&y);
+    printf("power of %d and %d",x,y,power(x,y));
+}
